@@ -3,14 +3,11 @@ from github import Github
 
 CurrentDirectory = os.getcwd()
 
-
 GitAdd = 'git add .'
 GitCommit = 'git commit -m "Routine Backup"'
 GitBranch = 'git branch -M main'
 GitPush = 'git push -u origin main'
 GitPull = 'git pull'
-
-print(CurrentDirectory)
 
 try:
     os.system(GitPull)
