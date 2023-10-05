@@ -60,6 +60,6 @@ except:
     print("Couldn't Execute Command.")
 
 try:
-    os.system(GitCommit)
+    os.system(GitPush)
 except:
     print("Couldn't Execute Command.")
