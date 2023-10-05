@@ -12,15 +12,15 @@ FolderName = "Backup_"+FormattedDate
 # Assigns the Folder Name to be created
 CurrentDirectory = os.getcwd()
 # Retrieves the Current Directory from System
-os.makedirs(FolderName)
+#os.makedirs(FolderName)
 # Creates the Backup Folder with date as unique identifier
-os.chdir(FolderName)
+#os.chdir(FolderName)
 # Changes the Directory to the current folder.
 
-try:
-    os.system('cmd /k "mongodump --host localhost:27017 --username uber --password admin --authenticationDatabase admin"')
-except:
-    print('Could not execute MONGODUMP command')
+#try:
+#    os.system('cmd /k "mongodump --host localhost:27017 --username uber --password admin --authenticationDatabase admin"')
+#except:
+#    print('Could not execute MONGODUMP command')
 # Opens CMD and Runs the MongoDump Command.
 
 #Token = "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"
@@ -40,23 +40,26 @@ except:
 #    os.system('cmd k/ "git-bash.exe"')
 #except:
 #    print("Couldn't Execute Command.")
-
+GitAdd = 'git add .'
+GitCommit = 'git commit -m "Routine Backup"'
+GitBranch = 'git branch -M main'
+GitPush = 'git push -u origin main'
 try:
-    os.system('cmd k/ "git add ."')
+    os.system(GitAdd)
 except:
     print("Couldn't Execute Command.")
 
 try:
-    os.system('cmd k/ "git commit -m')
+    os.system(GitCommit)
 except:
     print("Couldn't Execute Command.")
 
 try:
-    os.system('cmd k/ "git branch -M main"')
+    os.system(GitBranch)
 except:
     print("Couldn't Execute Command.")
 
 try:
-    os.system('cmd k/ "git push -u origin main"')
+    os.system(GitCommit)
 except:
     print("Couldn't Execute Command.")
