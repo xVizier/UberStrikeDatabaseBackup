@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"Clan.Name":{"$numberInt":"1"}},"name":"Name","unique":true},{"v":{"$numberInt":"2"},"key":{"Clan.Tag":{"$numberInt":"1"}},"name":"Tag","unique":true}],"uuid":"bd1d809877434f26b7d8c1207d7ad8ac","collectionName":"Clans","type":"collection"}
