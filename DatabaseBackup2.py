@@ -44,6 +44,11 @@ GitAdd = 'git add .'
 GitCommit = 'git commit -m "Routine Backup"'
 GitBranch = 'git branch -M main'
 GitPush = 'git push -u origin main'
+GitPull = 'git pull'
+try:
+    os.system(GitPull)
+except:
+    print("Couldn't Execute Command.")
 try:
     os.system(GitAdd)
 except:
