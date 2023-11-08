@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"d27eda4f05014952970487b726f15450","collectionName":"ExceptionData","type":"collection"}
